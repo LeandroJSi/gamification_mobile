@@ -56,8 +56,8 @@ class SearchUserByPhoneResultController extends GetxController {
     phone.value = user.phone;
     email.value = user.email;
     birthdate.value = user.birthdate;
-    checkInPrize.value = user.checkInPrize ? 'Retirado' : 'Não retirado';
-    simulationPrize.value = user.simulationPrize ? 'Retirado' : 'Não retirado';
+    checkInPrize.value = user.status! >= 3 ? 'Retirado' : 'Não retirado';
+    simulationPrize.value = user.status! >= 5 ? 'Retirado' : 'Não retirado';
     if (user.status == 8) {
       finalPrize.value = 'Retirado';
     }
