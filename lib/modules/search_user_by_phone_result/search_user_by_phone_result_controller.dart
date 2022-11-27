@@ -15,6 +15,7 @@ class SearchUserByPhoneResultController extends GetxController {
   final RxString name = ''.obs;
   final RxString phone = ''.obs;
   final RxString email = ''.obs;
+  final RxString birthdate = ''.obs;
   final RxString checkInPrize = ''.obs;
   final RxString simulationPrize = ''.obs;
   final RxString finalPrize = ''.obs;
@@ -54,12 +55,13 @@ class SearchUserByPhoneResultController extends GetxController {
     name.value = user.name;
     phone.value = user.phone;
     email.value = user.email;
+    birthdate.value = user.birthdate;
     checkInPrize.value = user.checkInPrize ? 'Retirado' : 'Não retirado';
     simulationPrize.value = user.simulationPrize ? 'Retirado' : 'Não retirado';
-    if (user.status == 'withdrew_gift') {
+    if (user.status == 8) {
       finalPrize.value = 'Retirado';
     }
-    if (user.status == 'you_won') {
+    if (user.status == 7) {
       finalPrize.value = 'Sorteado';
     }
     luckyNumber.value = user.luckyNumber == null ? '' : user.luckyNumber!;

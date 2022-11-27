@@ -30,6 +30,7 @@ class SearchUserByPhoneResultView
                       name: controller.name.value,
                       phone: controller.phone.value,
                       email: controller.email.value,
+                      birthdate: controller.birthdate.value,
                       checkInPrize: controller.checkInPrize.value,
                       simulationPrize: controller.simulationPrize.value,
                       finalPrize: controller.finalPrize.value,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 abstract class TccColors {
-  static Color baseColor = const Color(0xff0277BD);
+  static Color baseColor = const Color(0xff557FEB);
   static Color textColor = const Color(0xff000000);
 }
 
@@ -15,14 +15,14 @@ abstract class TccThemes {
             scrimColor: Colors.black26.withOpacity(0.5)),
         listTileTheme: ListTileThemeData(textColor: Colors.black),
         inputDecorationTheme: InputDecorationTheme(
-            labelStyle: TextStyle(color: Color(0xff0277BD)),
+            labelStyle: TextStyle(color: Color(0xff557FEB)),
             enabledBorder: UnderlineInputBorder(
-                borderSide: BorderSide(color: Color(0xff0277BD)))),
+                borderSide: BorderSide(color: Color(0xff557FEB)))),
         appBarTheme: const AppBarTheme(
-          color: Color(0xff0277BD),
+          color: Color(0xff557FEB),
           iconTheme: const IconThemeData(color: Colors.white),
         ),
-        colorScheme: const ColorScheme.light(primary: Color(0xff0277BD)),
+        colorScheme: const ColorScheme.light(primary: Color(0xff557FEB)),
         textTheme: const TextTheme(
             headline1: TextStyle(
                 fontSize: 16, fontFamily: 'Poppins', color: Colors.white)));

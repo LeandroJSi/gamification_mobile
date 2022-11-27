@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import 'custom_text.dart';
 
@@ -8,6 +9,7 @@ class SearchResult extends StatelessWidget {
       required this.name,
       required this.phone,
       required this.email,
+      required this.birthdate,
       required this.checkInPrize,
       required this.simulationPrize,
       required this.finalPrize,
@@ -18,6 +20,7 @@ class SearchResult extends StatelessWidget {
   final String name;
   final String phone;
   final String email;
+  final String birthdate;
   final String checkInPrize;
   final String simulationPrize;
   final String finalPrize;
@@ -41,6 +44,10 @@ class SearchResult extends StatelessWidget {
         CustomText(
           text1: 'E-mail: ',
           text2: email,
+        ),
+        CustomText(
+          text1: 'Data de Nascimento: ',
+          text2: DateFormat("dd/MM/yyyy").format(DateTime.parse(birthdate)),
         ),
         CustomText(
           text1: 'Brinde de check-in: ',
