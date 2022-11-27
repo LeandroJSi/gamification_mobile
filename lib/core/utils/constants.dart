@@ -1,6 +1,6 @@
 class Constants {
   static const String apiUrl =
-      'https://a7c3-2804-431-c7d1-fc80-21f6-b256-80f4-6bba.sa.ngrok.io';
+      'https://e822-2804-431-c7d1-e1af-184f-ae59-ddca-fdad.sa.ngrok.io';
   static Map<String, String> simpleHeaders() => {
         'Content-Type': 'application/json',
         'Accept': 'application/json',

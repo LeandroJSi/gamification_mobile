@@ -8,7 +8,7 @@ class SearchUserByPhoneController extends GetxController {
   final GlobalKey<FormState> searchUserByPhoneController =
       GlobalKey<FormState>();
   final TextEditingController phoneTextEditingController =
-      TextEditingController(text: '(19) 98712-811');
+      TextEditingController();
 
   final RxBool isSearchButtonEnabled = false.obs;
 
@@ -43,7 +43,8 @@ class SearchUserByPhoneController extends GetxController {
       searchUserByPhoneController.currentState!.save();
       FocusManager.instance.primaryFocus?.unfocus();
       disableSearchButton();
-
+      print(
+          '${AppRoutes.searchUserByPhoneResult}?phone=${UtilBrasilFields.removeCaracteres(phoneTextEditingController.value.text)}');
       await Get.toNamed(
           '${AppRoutes.searchUserByPhoneResult}?phone=${UtilBrasilFields.removeCaracteres(phoneTextEditingController.value.text)}');
       phoneTextEditingController.text = '';

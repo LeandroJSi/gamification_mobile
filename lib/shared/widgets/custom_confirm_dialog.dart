@@ -29,7 +29,7 @@ class CustomConfirmDialog extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Column(
-                    children: [
+                    children: const [
                       Text(
                         "Deseja notificar os participantes do próximo sorteio?",
                         style: TextStyle(
@@ -39,7 +39,7 @@ class CustomConfirmDialog extends StatelessWidget {
                         ),
                         textAlign: TextAlign.center,
                       ),
-                      const SizedBox(
+                      SizedBox(
                         height: 16,
                       ),
                     ],
@@ -56,7 +56,7 @@ class CustomConfirmDialog extends StatelessWidget {
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(2)),
                             ),
-                            child: Text(
+                            child: const Text(
                               "CANCELAR",
                               style: TextStyle(color: Colors.white),
                             ),
@@ -64,7 +64,7 @@ class CustomConfirmDialog extends StatelessWidget {
                               Get.back();
                             }),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       Expanded(
