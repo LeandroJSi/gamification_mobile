@@ -1,16 +1,17 @@
-# tcc_gamification
+#SISTEMA DE GERAÇÃO DE LEADS PARA FEIRA DAS PROFISSÕES ATRAVÉS DA GAMIFICAÇÃO - MOBILE
 
-A new Flutter project.
 
-## Getting Started
+## Requisitos
+#Ter o flutter instalado em sua máquina
+#Ter o android studio ou o visual studio code configurado para o flutter
+#Ter um emulador configurado para testar a aplicação
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+##Terminal
+# Rodar comando "flutter pub get" para puxar as dependencias do projeto
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Inicializar o emulador
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Rodar a aplicação
+
+```
